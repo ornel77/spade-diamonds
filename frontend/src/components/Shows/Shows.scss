@@ -1,0 +1,63 @@
+@import '../../../variables';
+
+.show-container {
+    height: 50vh;
+    h2 {
+        margin-bottom: 16px;
+        text-align: center;
+        font-family: $title-font;
+        color: $blue;
+        font-size: 32px;
+    }
+    
+    .show-list {
+        border: 1px solid rgba(245, 245, 245, 0.378);
+        background-color: #1d1d1d38;
+        align-items: center;
+        padding: 32px;
+        border-radius: 16px;
+
+        article {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 8px;
+            border-bottom: 1px solid rgba(245, 245, 245, 0.378);
+            padding-bottom: 8px;
+            // place-items: center;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            .date {
+                // height: 20px;
+                .day {
+                    font-size: 20px;
+                    color: $light-pink;
+                    font-weight: 900;
+                    font-family: $title-font;
+
+                }
+                .month-year {
+                    font-size: 14px;
+                }
+            }
+
+             .info-link {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .info-icon {
+                    color: $light-pink;
+                    font-size: 50px;
+                }
+            }
+
+            .city, .venue, .date {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

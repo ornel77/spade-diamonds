@@ -64,7 +64,7 @@ function Navbar() {
         </ul>
 
         {/* Burger Icons */}
-        <div className='burger-menu' onClick={handleClick}>
+        <div className='container burger-menu' onClick={handleClick}>
           <img src={logo} alt='' />
           <div className='burger-icons'>
             {!nav ? <HiMenuAlt3 size={30}/> : <FaTimes size={30}/>}
