@@ -34,6 +34,9 @@ function UpdateShowForm() {
         const res = await putShow(id, updateShow);
         console.log(res);
         toast.success('Evènement modifier avec succès!')
+        setTimeout(() => {
+          navigate('/admin')
+      }, 5000);
   
       } catch (err) {
         console.warn(err);

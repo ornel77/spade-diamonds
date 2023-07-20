@@ -25,7 +25,10 @@ function AddShowForm() {
     try {
         const res = await postShow(newShow);
         console.log(res);
-        toast.success('Oeuvre ajouté avec succès!')
+        toast.success('Evènement ajouté avec succès!')
+        setTimeout(() => {
+            navigate('/admin')
+        }, 5000);
   
       } catch (err) {
         console.warn(err);
