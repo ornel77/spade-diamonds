@@ -28,7 +28,7 @@ CREATE TABLE `member` (
   `email` varchar(45) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,6 +37,7 @@ CREATE TABLE `member` (
 
 LOCK TABLES `member` WRITE;
 /*!40000 ALTER TABLE `member` DISABLE KEYS */;
+INSERT INTO `member` VALUES (1,'ornella','o.t@mail.com','ornella');
 /*!40000 ALTER TABLE `member` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,8 +52,9 @@ CREATE TABLE `music` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `music_title` varchar(255) NOT NULL,
   `music_url` varchar(255) DEFAULT NULL,
+  `release_year` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,6 +63,7 @@ CREATE TABLE `music` (
 
 LOCK TABLES `music` WRITE;
 /*!40000 ALTER TABLE `music` DISABLE KEYS */;
+INSERT INTO `music` VALUES (4,'Wrong2','http://localhost:8000/upload/1689889351857-Wrong.mp3',NULL),(5,'TWS','http://localhost:8000/upload/1689889467120-Tomorrow will be the same (2018 Edit).mp3',NULL),(6,'Fire','http://localhost:8000/upload/1689890733429-Wrong.mp3',NULL),(7,'Fire','http://localhost:8000/upload/1689890747711-Story of a night.mp3',NULL),(8,'Fire','http://localhost:8000/upload/1689891000535-Wrong.mp3',NULL),(9,'Fire','http://localhost:8000/upload/1689891013972-Story of a night.mp3',NULL),(10,'Fire','http://localhost:8000/upload/1689891067281-Fire (live).mp3',NULL),(11,'Fireffsdf','http://localhost:8000/upload/1689891284753-Fire (live).mp3',NULL),(12,'nbgff','http://localhost:8000/upload/1689891531788-Fire (live).mp3',NULL);
 /*!40000 ALTER TABLE `music` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -101,7 +104,7 @@ CREATE TABLE `show` (
   `venue` varchar(150) NOT NULL,
   `city` varchar(65) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,7 +113,7 @@ CREATE TABLE `show` (
 
 LOCK TABLES `show` WRITE;
 /*!40000 ALTER TABLE `show` DISABLE KEYS */;
-INSERT INTO `show` VALUES (1,'20/092023','20:30:00','Oxygen','London'),(2,'18/12/2023','19:00:00','Metassos','Voisins-le-Bretonneux');
+INSERT INTO `show` VALUES (1,'20 Sept 2023','20:30:00','Half Moon Putney','Putney'),(2,'18 Dec 2023','19:00:00','Metassos','Voisins-le-Bretonneux'),(3,'13 Oct 2023','20:00:00','Stade de France','Saint-Denis'),(4,'17 Oct 2023','20:00:00','Le Truskel','Paris'),(8,'02 Feb 2024','21:00:00','Accor Arena','Paris'),(9,'03 Mar 2024','18:30:00','Royal Albert Hall','London'),(10,'23 Apr 2024','20:30:00','Le Truskel','Paris'),(26,'04 Apr 2024','15:00:00','Rock en Seine','Paris'),(28,'21 Jun 2024','16:00:00','Espace Caravelle','Meaux'),(29,'18/10/2023','21:00:00','Le dfdbdfbdfTruskel','Paris');
 /*!40000 ALTER TABLE `show` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -151,4 +154,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-19 12:09:10
+-- Dump completed on 2023-07-21  0:32:54

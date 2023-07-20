@@ -32,9 +32,8 @@ const {
   
   const postMusic = async (req, res) => {
     const music = req.body;
-    const uploadedFilePath =
-  req.protocol + '://' + req.get('host') + '/upload/' + req.files[0].filename;
-    console.log(music, uploadedFilePath);
+    const uploadedFilePath = req.protocol + '://' + req.get('host') + '/upload/' + req.files[0].filename;
+    console.log(music);
     try {
       const newMusic = await addMusic(music, uploadedFilePath);
       res.status(201).json(newMusic);
@@ -46,19 +45,21 @@ const {
   const updateMusic = async (req, res) => {
     const music = req.body;
     const id = parseInt(req.params.id);
-    const uploadedFilePath =
-  req.protocol + '://' + req.get('host') + '/upload/' + req.files[0].filename;
-    try {
-      const updatedMusic = await modifyMusic(music, uploadedFilePath, id);
-      if (updatedMusic.affectedRows === 1) {
-        console.log(music);
-        res.status(201).json({ id, ...music, music_url: uploadedFilePath });
-      } else {
-        res.status(404).json({ message: 'no music found with this id' });
-      }
-    } catch (error) {
-      res.status(500).json({ message: 'Server error' });
-    }
+    const url = req.protocol + '://' + req.get('host') + '/upload/' + req.files[0].filename
+    await modifyMusic(music,url, id )
+    res.json(url)
+
+   
+    // try {
+    //   const result = await modifyMusic(music, uploadedFilePath, id);
+    //   if (result.affectedRows === 1) {
+    //     res.status(201).json({ id, ...music});
+    //   } else {
+    //     res.status(404).json({ message: 'no music found with this id' });
+    //   }
+    // } catch (error) {
+    //   res.status(500).json({ message: 'Server error' });
+    // }
   };
   
   const deleteMusic = async (req, res) => {
