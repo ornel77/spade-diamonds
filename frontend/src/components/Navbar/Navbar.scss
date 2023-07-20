@@ -1,6 +1,7 @@
+@import '../../../variables';
+
 .nav-container {
     display: flex;
-    // grid-template-columns: repeat(3, 1fr);
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +10,7 @@
     margin: 0 auto;
     h2 {
         text-align: center;
-        color: white;
+        color: $white;
     }
 
     .nav-list {
@@ -23,6 +24,18 @@
             justify-content: center;
             align-items: center;
         }
+
+        a {
+            transition: 300ms ease-in-out;
+            &:hover {
+                background:$gradient;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+       
     }
 
     .socials {
@@ -67,8 +80,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 16px;
-            height: 5vh;
+            // padding-top: 16px;
+            height: 40px;
             img {
                 width: 10%;
                 // display: block;

@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from '../components/Hero/Hero'
 
 function Home() {
   return (
-    <div className='test-container'>Home</div>
+    <div>
+        <Hero />
+    </div>
   )
 }
 
