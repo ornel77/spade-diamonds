@@ -13,7 +13,7 @@ function AdminShowList() {
     getShows()
       .then((res) => setShows(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [shows]);
   return (
     <section className='admin-show-container'>
       <h2>Liste des concerts</h2>

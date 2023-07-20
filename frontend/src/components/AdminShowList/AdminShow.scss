@@ -19,6 +19,22 @@
             background: $purple;
             border-radius: 20px;
             font-weight: 300;
+            position: relative;
+
+            .delete-icon {
+                border: none;
+                background: transparent;
+                outline: none;
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                cursor: pointer;
+            }
+
+            .venue {
+                font-weight: 900;
+                letter-spacing: 1.5px;
+            }
 
 
             .btn {

@@ -4,12 +4,20 @@ const getShows = async () => {
     return api.get('/shows')
 }
 
+const getOneShow = async (id) => {
+    return api.get(`/shows/${id}`)
+}
+
 const postShow = async (data) => {
     return api.post('/shows', data)
 }
 
-const updateShows = async (id) => {
-    return api.put(`/shows/${id}`)
+const putShow = async (id, data) => {
+    return api.put(`/shows/${id}`,data)
 }
 
-export { getShows, postShow, updateShows }
+const removeShow = async (id) => {
+    return api.delete(`/shows/${id}`)
+}
+
+export { getShows, getOneShow, postShow, putShow, removeShow }
