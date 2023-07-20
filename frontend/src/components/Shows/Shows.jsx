@@ -12,13 +12,15 @@ function Shows() {
     }, [])
 
   return (
-    <section className='container show-container'>
-        <h2>Live Tour</h2>
-        <div className="show-list">
-            {
-                shows.map(show => <ShowItem key={show.id} show={show}/>)
-            }
-                 
+    <section className='container'>
+        <div className="show-container">
+            <h2>Live Tour</h2>
+            <div className="show-list">
+                {
+                    shows.map(show => <ShowItem key={show.id} show={show}/>)
+                }
+            
+            </div>
         </div>
     </section>
   )

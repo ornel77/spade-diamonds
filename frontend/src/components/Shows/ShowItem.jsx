@@ -5,8 +5,9 @@ import { FiArrowDownRight } from 'react-icons/fi'
 function ShowItem({show}) {
     const day = show.date.split(' ')[0]
     const monthYear = show.date.split(" ").slice(1,).join(' ')
+    const time = show.time.split(':').slice(0,2).join(':')
+    console.log(time)
 
-    console.log(monthYear)
   return (
     <article>
       <div className='date'>
@@ -15,6 +16,7 @@ function ShowItem({show}) {
           <p className='month-year'> {monthYear} </p>
         </div>
       </div>
+      <div className='time'> {time} </div>
       <div className='city'> {show.city} </div>
       <div className='venue'> {show.venue} </div>
       <a href='#' className='info-link'>

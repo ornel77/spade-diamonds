@@ -1,7 +1,9 @@
 @import '../../../variables';
 
 .show-container {
-    height: 50vh;
+    // height: 50vh;
+    margin-bottom: 80px;
+
     h2 {
         margin-bottom: 16px;
         text-align: center;
@@ -19,7 +21,7 @@
 
         article {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 150px 150px repeat(3, 1fr);
             margin-bottom: 8px;
             border-bottom: 1px solid rgba(245, 245, 245, 0.378);
             padding-bottom: 8px;
@@ -54,7 +56,7 @@
                 }
             }
 
-            .city, .venue, .date {
+            .city, .venue, .date, .time {
                 display: flex;
                 align-items: center;
             }

@@ -1,0 +1,20 @@
+@import '../../../variables';
+
+
+footer {
+    height: 10vh;
+    background-color: #5998C5;
+    .footer-container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+    
+}
