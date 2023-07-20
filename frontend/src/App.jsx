@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import MusicScreen from "./pages/MusicScreen";
 import VideoScreen from "./pages/VideoScreen";
 import AdminScreen from "./pages/AdminScreen";
+import AdminShowList from "./components/AdminShowList/AdminShowList";
+import AddShowForm from "./components/AddUpdateShowForm/AddShowForm";
+import UpdateShowForm from "./components/AddUpdateShowForm/UpdateShowForm";
 
 
 const router = createBrowserRouter([
@@ -26,10 +29,24 @@ const router = createBrowserRouter([
       },
       {
         path: '/admin',
-        element: <AdminScreen />
+        element: <AdminScreen />,
+        children: [
+          {
+            path: '/admin-show',
+            element: <AdminShowList />
+          },
+        ]
       }
     ]
-  }
+  },
+  {
+    path: '/add-show',
+    element: <AddShowForm />
+  },
+  {
+    path: '/update-show/:id',
+    element: <UpdateShowForm />
+  },
 ])
 
 function App() {

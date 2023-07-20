@@ -56,8 +56,19 @@
 /* -------------------------------------------------------------------------- */
 @media screen and (max-width: 420px) {
     .hero-container {
+        height: initial;
         .hero-text {
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-container {
+        .hero-text {
+            h1 {
+                font-size: 24px;
+            }
         }
     }
 }

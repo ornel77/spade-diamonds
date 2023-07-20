@@ -34,7 +34,7 @@ img {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 8px;
+  padding: 16px;
   width: 100%;
 }
 
@@ -43,6 +43,7 @@ img {
   outline: none;
   background: transparent;
   cursor: pointer;
+  border: none;
 }
 
 .test-container {

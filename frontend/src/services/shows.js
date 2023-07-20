@@ -4,4 +4,12 @@ const getShows = async () => {
     return api.get('/shows')
 }
 
-export { getShows }
+const postShow = async (data) => {
+    return api.post('/shows', data)
+}
+
+const updateShows = async (id) => {
+    return api.put(`/shows/${id}`)
+}
+
+export { getShows, postShow, updateShows }

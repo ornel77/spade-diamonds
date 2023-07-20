@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import AdminShowList from '../components/AdminShowList/AdminShowList';
 
 function AdminScreen() {
   return (
-    <div className='test-container'>AdminScreen</div>
-  )
+    <div className='container'>
+      <AdminShowList />
+    </div>
+  );
 }
 
-export default AdminScreen
+export default AdminScreen;
