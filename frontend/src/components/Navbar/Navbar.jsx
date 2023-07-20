@@ -13,8 +13,8 @@ function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className='container'>
-      <div className='nav-container'>
+    <div className=''>
+      <div className='container nav-container'>
         <nav className='nav-desktop'>
           <ul className='nav-list'>
             <li>

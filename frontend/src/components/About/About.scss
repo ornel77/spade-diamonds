@@ -1,0 +1,30 @@
+@import '../../../variables';
+
+.about-container {
+    height: 60vh;
+    display: grid;
+    place-items: center;
+
+    .about-sub-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+
+        .about-content {
+            h2 {
+                margin-bottom: 16px;
+                text-align: center;
+                font-family: $title-font;
+                color: $blue;
+            }
+            p {
+                line-height: 1.5;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+
+        .about-illustration {
+        }
+    }
+}
