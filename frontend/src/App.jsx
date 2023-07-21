@@ -8,6 +8,10 @@ import AdminScreen from "./pages/AdminScreen";
 import AdminShowList from "./components/AdminShowList/AdminShowList";
 import AddShowForm from "./components/AddUpdateShowForm/AddShowForm";
 import UpdateShowForm from "./components/AddUpdateShowForm/UpdateShowForm";
+import NavAdmin from "./components/NavbarAdmin/NavAdmin";
+import AdminMusicScreen from "./pages/AdminMusicScreen";
+import AddMusicForm from "./components/AddUpdateMusicForm/AddMusicForm";
+import UpdateMusicForm from "./components/AddUpdateMusicForm/UpdateMusicForm";
 
 
 const router = createBrowserRouter([
@@ -29,12 +33,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/admin',
-        element: <AdminScreen />,
+        element: <NavAdmin />,
         children: [
           {
-            path: '/admin-show',
-            element: <AdminShowList />
+            path: '/admin',
+            element: <AdminScreen />
           },
+          
         ]
       }
     ]
@@ -46,6 +51,18 @@ const router = createBrowserRouter([
   {
     path: '/update-show/:id',
     element: <UpdateShowForm />
+  },
+  {
+    path: '/admin-music',
+    element: <AdminMusicScreen />
+  },
+  {
+    path: '/add-music',
+    element: <AddMusicForm />
+  },
+  {
+    path: '/update-music/:id',
+    element: <UpdateMusicForm />
   },
 ])
 

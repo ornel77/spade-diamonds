@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { removeShow } from '../../services/shows';
 import { IoClose } from 'react-icons/io5';
-import { toast } from 'react-toastify';
 
 function AdminShowItem({ show }) {
   const navigate = useNavigate();

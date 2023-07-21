@@ -1,0 +1,71 @@
+@import '../../../variables';
+
+.super-container {
+    background: $gradient no-repeat center/cover;
+    min-height: 100vh;
+    overflow: hidden;
+
+    .close {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.body-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 60vh;
+    // min-height: 100vh;
+    .container {
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            color: $white;
+            font-family: $title-font;
+        }
+
+        form {
+            padding: 30px 0 0 0;
+
+                .input-data input {
+                    display: block;
+                    width: 40%;
+                    height: 100%;
+                    margin-inline: auto;
+                    border: none;
+                    font-size: 16px;
+                    padding: 12px 8px;
+                    border-radius: 10px;
+                    margin-bottom: 16px;
+                }
+
+                .submit-data {
+                    .btn {
+                        display: block;
+                        width: 20%;
+                        text-align: center;
+                        height: 100%;
+                        margin-inline: auto;
+                        font-size: 16px;
+                        border: 2px solid $white;
+                        padding: 12px 8px;
+                        border-radius: 10px;
+                        margin-bottom: 16px;
+                    }
+                    
+                }
+        }
+        
+    }
+}

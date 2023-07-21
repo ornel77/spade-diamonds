@@ -1,0 +1,22 @@
+@import '../../../variables';
+
+.nav-admin-container {
+    // width: 100%;
+    .nav-list {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        li a {
+            border: 1px solid $white;
+            padding: 8px 16px;
+            border-radius: 15px;
+
+            &.active {
+                background-color: $white;
+                color: $background-color
+            }
+        }
+
+
+    }
+}

@@ -2,7 +2,9 @@ import React from 'react'
 
 function VideoScreen() {
   return (
-    <div className='test-container'>VideoScreen</div>
+    <div className='test-container container'>
+      <h1>Coming Soon :)</h1>
+    </div>
   )
 }
 

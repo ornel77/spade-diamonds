@@ -1,0 +1,52 @@
+@import '../../../variables';
+
+.music-container-admin {
+    .music-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .audio-container-admin {
+            display: flex;
+            background-color: $purple;
+            flex-direction: column;
+            margin-top: 40px;
+            border-radius: 15px;
+            padding: 16px;
+            position: relative;
+
+            .delete-icon {
+                border: none;
+                background: transparent;
+                outline: none;
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                cursor: pointer;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            .btn {
+                margin-top: 16px;
+                font-weight: 300;
+                border: 1px solid $white;
+                padding: 10px;
+                border-radius: 15px;
+            }
+        
+        }
+
+        .add-icon {
+            border: 1px solid $purple;
+            background: transparent;
+            display: grid;
+                place-items: center;
+        }
+    }
+}

@@ -1,8 +1,11 @@
 import React from 'react'
+import Music from '../components/Musics/Music'
 
 const MusicScreen = () => {
   return (
-    <div className='test-container'>MusicScreen</div>
+    <div className=''>
+      <Music />
+    </div>
   )
 }
 

@@ -47,10 +47,15 @@ img {
 }
 
 .test-container {
-  background-color: rgb(174, 123, 79);
-  height: 100px;
+  background-color:$purple;
+  border-radius: 50px;
+  min-height: 80vh;
   margin-top: 60px;
+  display: grid;
+  place-items: center;
 }
+
+
 
 
 /* -------------------------------------------------------------------------- */
