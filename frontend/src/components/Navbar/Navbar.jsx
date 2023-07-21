@@ -38,25 +38,25 @@ function Navbar() {
         </div>
         <ul className='socials'>
           <li>
-            <a href='#'>
+            <a href='https://www.instagram.com/spadediamonds/' target="_blank">
               {' '}
               <SiInstagram />{' '}
             </a>
           </li>
           <li>
-            <a href='#'>
+            <a href='https://www.youtube.com/@SpadeDiamonds/featured' target="_blank">
               {' '}
               <IoLogoYoutube />{' '}
             </a>
           </li>
           <li>
-            <a href='#'>
+            <a href='https://www.facebook.com/spadediamonds' target="_blank">
               {' '}
               <SiFacebook />{' '}
             </a>
           </li>
           <li>
-            <a href='#'>
+            <a href='https://soundcloud.com/spadediamonds' target="_blank">
               {' '}
               <RiSoundcloudLine />{' '}
             </a>

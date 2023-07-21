@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 function VideoScreen() {
   return (
-    <div className='test-container container'>
-      <h1>Coming Soon :)</h1>
+    <div className='container'>
+      <div className='test-container'>
+        <h1>Coming Soon :)</h1>
+      </div>
     </div>
-  )
+  );
 }
 
-export default VideoScreen
+export default VideoScreen;

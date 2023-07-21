@@ -2,6 +2,7 @@
 
 
 .music-container {
+    width: 100%;
     h2 {
         margin-bottom: 16px;
         text-align: center;
@@ -48,6 +49,22 @@
                     }
                 }
             }
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .audio-container {
+        h3 {
+            text-align: center;
+
+            
+        }
+
+        .icon-and-player {
+            flex-direction: column;
             
         }
     }

@@ -64,7 +64,6 @@ function UpdateMusicForm() {
               <input
                 type='text'
                 required
-                ref={file}
                 placeholder='title'
                 name='music_title'
                 value={updateMusic.music_title}

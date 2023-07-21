@@ -35,7 +35,7 @@ function AdminMusicItem({ music }) {
         {music.music_title} ({music.release_year}){' '}
       </h3>
       <audio src={music.music_url} controls />
-      <button className="btn" onClick={() => navigate(`/update-music/${music.id}`)} >Mettre à jour</button>
+      <button className="btn" onClick={() => navigate(`/update-music/${music.id}`)} disabled >Mettre à jour</button>
     </article>
   );
 }

@@ -53,6 +53,7 @@ img {
   margin-top: 60px;
   display: grid;
   place-items: center;
+  
 }
 
 
@@ -70,5 +71,9 @@ img {
 @media screen and (max-width: 400px) {
   .container {
     max-width: 340px;
+  }
+
+  .test-container {
+    max-width: 300px;
   }
 }
